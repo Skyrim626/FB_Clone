@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+/** Hide Desktop Tags **/
+header nav .desktop {
+    display: none;
+}
+
+/** Hide Desktop Icons **/
+header nav .desktop .desktop {
+    display: none;
+}
+
+
+/** Show Mobile Tags **/
+header nav .mobile {
+    display: block;
+}
+
+
+/** Layouting **/
+
+body {
+    background: gray;
+}
+
+/** All **/
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav .desktop.mobile {
+    display: flex;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+/** Header 1 **/
+header nav .desktop.mobile.list.one {
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+header nav .desktop.mobile h1 {
+    color: #1877f2;
+    font-size: 1.8em;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav .desktop.mobile.list.one .mobile-container {
+    display: flex;
+}
+
+header nav .desktop.mobile.list.one .mobile-container .mobile.menu {    
+    margin: 0 5px;
+    position: relative;
+}
+
+header nav .desktop.mobile.list.one .mobile-container .mobile.menu a {
+    background: gray;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: rgba(228,230,235,1.0);
+    display: flex;
+}
+
+header nav .desktop.mobile.list.one .mobile-container .mobile.menu i {
+     font-size: 1.4em;
+     color:black;
+     font-weight:900;
+}
+
+/** Header 2 **/
+
+header nav .desktop.mobile.list.two .mobile {
+    width: 100%;
+    display: flex;
+    
+}
+
+header nav .desktop.mobile.list.two .mobile a {
+    padding: 10px 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav .desktop.mobile.list.two .mobile a i {
+    font-size: 1.3em;
+    color: gray;
+}
+
+header nav .desktop.mobile.list.two .mobile a .fa-solid.fa-house {
+    color: #1877f2;
+}
+
+
+

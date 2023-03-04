@@ -7,102 +7,212 @@
     <script src="https://kit.fontawesome.com/0753959a3d.js" crossorigin="anonymous"></script>
 
     <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/header.css">
     <title>Facebook Clone</title>
 </head>
 <body>
     
+        <!--Desktop/Mobile Indicator-->
+        <!--desktop        - desktop only
+            mobile          - mobile only
+            desktop mobile - both desktop and mobile Container-->
+
     <header>
 
         <nav>
 
-            <ul class="list one">
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <p><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search Facebook"></p>
+            <ul class="desktop mobile list one">
+
+                <li class="desktop"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                
+                <h1 class="mobile">facebook</h2>
+                <!-- <li class="mobile menu"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li> -->
+                <p class="desktop"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search Facebook"></p>
+                 
+                <section class="mobile-container">
+                    <li class="mobile menu"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="mobile menu"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                </section>
+                
+                <!-- <li class="mobile menu"><a href="#"><i class="fa-solid fa-bars"></i></a></li> -->
+
             </ul>
 
-            <ul class="list two">
-                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-display"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-store"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-people-group"></i></a></li>
+            <ul class="desktop mobile list two">
+                <li class="desktop"><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li class="mobile"><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li class="mobile"><a href="#"><i class="fa-solid fa-user-group"></i></a></li>
+                <li class="mobile"><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+                <li class="desktop"><a href="#"><i class="fa-solid fa-display"></i></a></li>
+                <li class="mobile"><a href="#"><i class="fa-solid fa-display"></i></a></li>
+                <li class="desktop"><a href="#"><i class="fa-solid fa-store"></i></a></li>
+                <li class="mobile"><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li class="mobile"><a href="#"><i class="fa-solid fa-people-group"></i></a></li>
+                <li class="desktop"><a href="#"><i class="fa-solid fa-people-group"></i></a></li>
             </ul>
 
-            <ul class="list three">
+            <ul class="desktop list three">
                 <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
 
-                <!--Drop Down Menu-->
+                <!--Drop Down Menu For Menu-->
                 <ul class="drop-down-menu">
                     <section class="context">
                         <h2>Menu</h2>
-                        <section class="menu-content-left">
-                            <p><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search Menu"></p>
-                            <h3>Social</h3>
+                        <section class="container scrollbar">
+                            <section class="menu-content-left">
+                                <p><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search Menu"></p>
+                                <h3>Social</h3>
 
-                            <a href="#" class="option">
-                                <i class="fa-regular fa-calendar"></i>
-                                <section class="text">
-                                    <h4>Events</h4>
-                                    <p>Organize or find events and other things to do online and nearby.</p>
-                                </section>
-                            </a>
-                            <a href="#" class="option">
-                                <i class="fa-solid fa-user-group"></i>
-                                <section class="text">
-                                    <h4>Friends</h4>
-                                    <p>Search for friends or people you may know.</p>
-                                </section>
-                            </a>
-                            <a href="#" class="option">
-                                <i class="fa-solid fa-people-group"></i>
-                                <section class="text">
-                                    <h4>Groups</h4>
-                                    <p>Connect with people who share your interests.</p>
-                                </section>
-                            </a>
-                            <a href="#" class="option">
-                                <i class="fa-solid fa-newspaper"></i>
-                                <section class="text">
-                                    <h4>News Feed</h4>
-                                    <p>See relevant posts from people and Pages you follow.</p>
-                                </section>
-                            </a>
-                            <a href="#" class="option">
-                                <i class="fa-solid fa-star"></i>
-                                <section class="text">
-                                    <h4>Favorites</h4>
-                                    <p>View posts by Favorites</p>
-                                </section>
-                            </a>
-                            <a href="#" class="option">
-                                <i class="fa-solid fa-timeline"></i>
-                                <section class="text">
-                                    <h4>Most Recent</h4>
-                                    <p>See the most recent posts from your friends, groups, Pages and more.</p>
-                                </section>
-                            </a>
-                            <a href="#" class="option">
-                                <i class="fa-solid fa-flag"></i>
-                                <section class="text">
-                                    <h4>Pages</h4>
-                                    <p>Discover and connect with business on Facebook.</p>
-                                </section>
-                            </a>
-                            <br>
-                            <hr>
+                                <a href="#" class="option">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <section class="text">
+                                        <h4>Events</h4>
+                                        <p>Organize or find events and other things to do online and nearby.</p>
+                                    </section>
+                                </a>
+                                <a href="#" class="option">
+                                    <i class="fa-solid fa-user-group"></i>
+                                    <section class="text">
+                                        <h4>Friends</h4>
+                                        <p>Search for friends or people you may know.</p>
+                                    </section>
+                                </a>
+                                <a href="#" class="option">
+                                    <i class="fa-solid fa-people-group"></i>
+                                    <section class="text">
+                                        <h4>Groups</h4>
+                                        <p>Connect with people who share your interests.</p>
+                                    </section>
+                                </a>
+                                <a href="#" class="option">
+                                    <i class="fa-solid fa-newspaper"></i>
+                                    <section class="text">
+                                        <h4>News Feed</h4>
+                                        <p>See relevant posts from people and Pages you follow.</p>
+                                    </section>
+                                </a>
+                                <a href="#" class="option">
+                                    <i class="fa-solid fa-star"></i>
+                                    <section class="text">
+                                        <h4>Favorites</h4>
+                                        <p>View posts by Favorites</p>
+                                    </section>
+                                </a>
+                                <a href="#" class="option">
+                                    <i class="fa-solid fa-timeline"></i>
+                                    <section class="text">
+                                        <h4>Most Recent</h4>
+                                        <p>See the most recent posts from your friends, groups, Pages and more.</p>
+                                    </section>
+                                </a>
+                                <a href="#" class="option">
+                                    <i class="fa-solid fa-flag"></i>
+                                    <section class="text">
+                                        <h4>Pages</h4>
+                                        <p>Discover and connect with business on Facebook.</p>
+                                    </section>
+                                </a>
+                                <br>
+                                <hr>
 
-                        </section>
+                            </section>
 
-                        <section class="menu-content-right">
-                            <ul>
-                                <h2>Create</h2>
-                            </ul>
+                            <section class="menu-content-right">
+                                <ul>
+                                    <h2>Create</h2>
+                                    <a href="#" class="option">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <p>Post</p>
+                                    </a>
+
+                                    <a href="#" class="option">
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <p>Story</p>
+                                    </a>
+
+                                    <a href="#" class="option">
+                                        <i class="fa-solid fa-video"></i>
+                                        <p>Room</p>
+                                    </a>
+
+                                    <hr>
+
+                                    <a href="#" class="option">
+                                        <i class="fa-regular fa-flag"></i>
+                                        <p>Page</p>
+                                    </a>
+
+                                    <a href="#" class="option">
+                                        <i class="fa-solid fa-bullhorn"></i>
+                                        <p>Ad</p>
+                                    </a>
+
+                                    <a href="#" class="option">
+                                        <i class="fa-solid fa-people-group"></i>
+                                        <p>Group</p>
+                                    </a>
+
+                                    <a href="#" class="option">
+                                        <i class="fa-solid fa-calendar-plus"></i>
+                                        <p>Event</p>
+                                    </a>
+
+                                    <a href="#" class="option">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p>Marketplace listing</p>
+                                    </a>
+
+
+                                </ul>
+                            </section>
                         </section>
 
                     </section>
                 </ul>
-
+                
+                <!--Messenger Button-->
                 <li><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+
+                <!--Drop Down Menu for Messenger-->
+                <ul class="drop-down-menu">
+                    <section class="container scrollbar">
+                        <section class="header">
+                            <h2>Chats</h2>
+                            <ul class="options">
+                                <li><a href="#"><i class="fa-solid fa-ellipsis"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-maximize"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-pen-to-square"></i></a></li>
+                            </ul>
+                            <p class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search Messenger"></p>
+                            <section class="two-option">
+                                <button class="option">Inbox</button>
+                                <button class="option">Communities</button>
+                            </section>
+
+                            <!--Continue Code Here (Optional)-->
+                            <section class="messenger-message-container">
+                                <section class="chat">
+                                    <img src="" alt="">
+                                    <section class="content">
+                                        <h2></h2>
+                                    </section>
+                                </section>
+                            </section>
+
+                        </section>
+
+                    </section>
+                    <hr>
+                    <li><a href="#">See all in Messenger</a></li>
+                </ul>
+
                 <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+
+                <li style="display : none;"><a href="#"><img src="img/profile.jpg" alt=""></a></li>
+
             </ul>
 
         </nav>
@@ -111,9 +221,49 @@
     </header>
 
     <main>
-        <section class="sidebar-left"></section>
-        <section class="main"></section>
-        <section class="sidebar-right"></section>
+
+        <section class="desktop sidebar-left scrollbar">
+            <ul class="categories">
+
+                <a href="#" style="display: none;">
+                    <img src="img/profile.jpg" alt="">
+                    <p>Hans Zin Sanchez</p>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-user-group"></i>
+                    <p>Friends</p>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <p>Most Recent</p>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>Groups</p>
+                </a>
+                
+                <a href="#">
+                    <i class="fa-solid fa-shop"></i>
+                    <p>Marketplace</p>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-tv"></i>
+                    <p>Watch</p>
+                </a>
+
+            </ul>
+        </section>
+
+        <section class="main">
+            
+        </section>
+
+        <section class="desktop sidebar-right"></section>
+
     </main>
 
     <!--Empty-->

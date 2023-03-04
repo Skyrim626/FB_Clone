@@ -1,0 +1,20 @@
+
+
+.drop-down-menu {
+    display: none;
+}
+
+
+/** Main Layout **/
+
+/** Hide Sidebars **/
+main .desktop {
+    display: none;
+}
+
+main {
+    margin-top: 2px;
+    background: white;
+}
+
+
