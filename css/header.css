@@ -30,10 +30,6 @@ header nav .mobile {
 
 /** Layouting **/
 
-body {
-    background: gray;
-}
-
 /** All **/
 header nav {
     display: flex;
@@ -100,6 +96,12 @@ header nav .desktop.mobile.list.two .mobile a {
     justify-content: center;
     align-items: center;
 
+    
+
+}
+
+header nav .desktop.mobile.list.two .mobile #selected {
+    border-bottom: 3px solid #1877f2;
 }
 
 header nav .desktop.mobile.list.two .mobile a i {
@@ -109,6 +111,7 @@ header nav .desktop.mobile.list.two .mobile a i {
 
 header nav .desktop.mobile.list.two .mobile a .fa-solid.fa-house {
     color: #1877f2;
+    
 }
 
 

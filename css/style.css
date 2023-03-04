@@ -4,6 +4,10 @@
     display: none;
 }
 
+/** Body **/
+body {
+    background: gray;
+}
 
 /** Main Layout **/
 
@@ -14,7 +18,162 @@ main .desktop {
 
 main {
     margin-top: 2px;
+}
+
+/** Set Background Main Color **/
+main .main .container {
     background: white;
 }
+
+/** Layouting **/
+/** Using Flexbox **/
+
+main .main {
+    display: flex;
+    flex-direction: column;
+}
+
+main .main .container.post-feed {
+    order: 0;
+    padding: 15px 10px 15px 10px;
+}
+
+main .main .container.post-feed hr {
+    display: none;
+}
+
+main .main .stories {
+    order: 1;
+}
+
+
+/** Post-Feed **/
+main .main .container.post-feed .post-feed-main {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.4em;
+}
+
+main .main .container.post-feed .post-feed-main img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+main .main .container.post-feed .post-feed-main input {
+    width: 16rem;
+    border-radius: 100px;
+    padding: 0 15px;
+    border: none;
+    background: #F0F2F5;
+}
+
+main .main .container.post-feed .post-feed-main input::placeholder {
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+}
+
+main .main .container.post-feed .desktop.post-feed-option {
+    display: none;
+}
+
+
+main .main .container.post-feed .post-feed-main .photo-option {
+    display: flex;
+    
+    flex-direction: column;
+    color: blue;
+    /* padding: 10px; */
+}
+
+main .main .container.post-feed .post-feed-main .photo-option i {
+    font-size: 1.5em;
+    color: black;
+}
+
+main .main .container.post-feed .post-feed-main .photo-option p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 0.8em;
+}
+
+
+
+/** Stories **/
+
+main .main .container.stories {
+    margin-top: 3px;
+    padding: 5px;
+}
+
+main .main .container.stories .desktop {
+    display: none;
+}
+
+
+main .main .container.stories .container-friends-stories {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+main .main .container.stories .container-friends-stories .story {
+    min-width: 103px;
+    min-height: 183px;
+    border-radius: 10px;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+/** Hide Image **/
+main .main .container.stories .container-friends-stories img {
+    display: none;
+}
+
+main .main .container.stories .container-friends-stories .story.your-story .my-story {
+    display: block;
+    object-fit: cover;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    height: 100%;
+    background: green;
+    flex: 2;
+}
+
+main .main .container.stories .container-friends-stories .story .add-story {
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    flex: 1;
+}
+
+main .main .container.stories .container-friends-stories .story .add-story i {
+    color: #1877f2;
+    font-size: 2.3em;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 90%;
+}
+
+main .main .container.stories .container-friends-stories .story .add-story p {
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+
+
 
 

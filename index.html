@@ -42,7 +42,7 @@
 
             <ul class="desktop mobile list two">
                 <li class="desktop"><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li class="mobile"><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li class="mobile"><a href="#" id="selected"><i class="fa-solid fa-house"></i></a></li>
                 <li class="mobile"><a href="#"><i class="fa-solid fa-user-group"></i></a></li>
                 <li class="mobile"><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
                 <li class="desktop"><a href="#"><i class="fa-solid fa-display"></i></a></li>
@@ -222,7 +222,7 @@
 
     <main>
 
-        <section class="desktop sidebar-left scrollbar">
+        <!-- <section class="desktop sidebar-left scrollbar">
             <ul class="categories">
 
                 <a href="#" style="display: none;">
@@ -256,10 +256,81 @@
                 </a>
 
             </ul>
-        </section>
+        </section> -->
 
         <section class="main">
-            
+
+            <section class="container stories">
+                <ul class="desktop selection">
+                    <li><a href="#"><i class="fa-solid fa-book-open"></i> Stories</a></li>
+                    <li><a href="#"><i class="fa-solid fa-clapperboard"></i> Reels</a></li>
+                </ul>
+                <section class="container-friends-stories">
+                    <button class="story your-story">
+                        <img src="img/profile.jpg" alt="" class="my-story">
+                        <section class="add-story">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <p>Add to story</p>
+                        </section>
+                        
+                    </button>
+                    <button class="story friend-story">
+                        <img src="img/profile.jpg" alt="" class="story-image">
+                        <section class="story-content">
+                            <img src="" alt="" class="friend-profile">
+                            <p class="name">User Name</p>
+                        </section>
+                    </button>
+                    <button class="story friend-story">
+                        <img src="img/profile.jpg" alt="" class="story-image">
+                        <section class="story-content">
+                            <img src="" alt="" class="friend-profile">
+                            <p class="name">User Name</p>
+                        </section>
+                    </button>
+                    <button class="story friend-story">
+                        <img src="img/profile.jpg" alt="" class="story-image">
+                        <section class="story-content">
+                            <img src="" alt="" class="friend-profile">
+                            <p class="name">User Name</p>
+                        </section>
+                    </button>
+                </section>
+            </section>
+
+            <section class="container post-feed">
+                <section class="post-feed-main">
+                    <img src="img/profile.jpg" alt="">
+                    <input type="text" placeholder="What's on your mind?">
+                    <a href="#" class="photo-option">
+                        <i class="fa-solid fa-images"></i>
+                        <p>Photo</p>
+                    </a>
+                </section>
+                <hr>
+                <ul class="desktop post-feed-option">
+                    <li><a href="#"><i class="fa-solid fa-video"></i> Live Video</a></li>
+                    <li><a href="#"><i class="fa-solid fa-images"></i> Photo/Video</a></li>
+                    <li><a href="#"><i class="fa-regular fa-face-laugh-beam"></i> Feeling/Activity</a></li>
+                </ul>
+            </section>
+
+            <!-- <section class="posted-content-has-shared-photo">
+                <section class="header-format">
+                    <img src="" alt="">
+                    <section class="user-name">
+                        <p class="user-name"><a href="#"></a></p>
+                        <p class="time-posted"><a href="#">16h</a> • <i class="fa-solid fa-earth-americas"></i></p>
+                    </section>
+                    <ul class="option">
+                        <li><button><i class="fa-solid fa-ellipsis"></i></button></li>
+                        <li><button><i class="fa-solid fa-xmark"></i></button></li>
+                    </ul>
+                </section>
+
+                
+            </section> -->
+
         </section>
 
         <section class="desktop sidebar-right"></section>
