@@ -196,7 +196,7 @@ main .main .container.stories .container-friends-stories .story.friend-story .ad
 /** News Feed **/
 main .main .content-container {
     order: 1;
-    margin-top: 8px;
+    background: #90949c;
 }
 
 
@@ -206,7 +206,7 @@ main .main .content-container .content {
 
     display: flex;
     flex-direction: column;
-
+    margin-top: 5px;
     /** Main Font For The News Feed Content **/
     font-family: Arial, Helvetica, sans-serif
 
@@ -269,4 +269,105 @@ main .main .content-container .content .content-image {
 
 main .main .content-container .content .content-image .friend-comment {
     font-size: 0.9em;
+}
+
+
+main .main .content-container .content .content-image .owner {
+    margin-top: 5px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+main .main .content-container .content .content-image .owner .posted-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1px;
+}
+
+main .main .content-container .content .content-image .owner .posted-image img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+main .main .content-container .content .content-image .owner .owner-content-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+main .main .content-container .content .content-image .owner .owner-content-section .owner-profile {
+    border: 2px solid #1877f2;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+main .main .content-container .content .content-image .owner .owner-content-section .owner-left-section {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+main .main .content-container .content .content-image .owner .owner-content-section .owner-left-section .owner-profile img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+main .main .content-container .content .content-image .owner .owner-content-section .owner-left-section .owner-name .owner-content {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+main .main .content-container .content .content-image .owner .owner-content-section .owner-left-section .owner-name .time-posted {
+    font-size: 0.7em;
+    color: #90949c;
+}
+
+main .main .content-container .content .content-image .owner .owner-content-section .owner-comment {
+    margin-top: 5px;
+}
+
+
+/**Reaction Box **/
+main .main .content-container .content hr {
+    margin: 5px 0;
+}
+
+main .main .content-container .content .total-reaction {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .main .content-container .content .total-reaction .react {
+    display: flex;
+} 
+
+main .main .content-container .content .user-option {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+main .main .content-container .content .user-option .option {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 0;
+}
+
+main .main .content-container .content .user-option .option > * {
+    font-size: 1.1em;
+    color: #101010;
 }
