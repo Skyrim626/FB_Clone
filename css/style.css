@@ -6,7 +6,7 @@
 
 /** Body **/
 body {
-    background: gray;
+    background: rgb(228, 228, 228);
 }
 
 /** Main Layout **/
@@ -33,6 +33,10 @@ main .main {
     flex-direction: column;
 }
 
+main .main .container.stories {
+    order: 0;
+}
+
 main .main .container.post-feed {
     order: 0;
     padding: 15px 10px 15px 10px;
@@ -42,7 +46,7 @@ main .main .container.post-feed hr {
     display: none;
 }
 
-main .main .stories {
+main .main .container.stories {
     order: 1;
 }
 
@@ -61,7 +65,7 @@ main .main .container.post-feed .post-feed-main img {
 }
 
 main .main .container.post-feed .post-feed-main input {
-    width: 16rem;
+    width: 100%;
     border-radius: 100px;
     padding: 0 15px;
     border: none;
@@ -105,6 +109,8 @@ main .main .container.post-feed .post-feed-main .photo-option p {
 main .main .container.stories {
     margin-top: 3px;
     padding: 5px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main .main .container.stories .desktop {
@@ -116,64 +122,151 @@ main .main .container.stories .container-friends-stories {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     gap: 5px;
 }
 
 main .main .container.stories .container-friends-stories .story {
-    min-width: 103px;
-    min-height: 183px;
+    margin: 10px 0 5px 0;
+    min-width: 90px;
+    min-height: 160px;
     border-radius: 10px;
-    flex-grow: 1;
-    position: relative;
+    
+    max-width: 90px;
+    max-height: 160px;
+
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background: white;
+    position: relative;
+    /** Display Pictures **/
+    background-image: url("../img/profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/** Hide Image **/
-main .main .container.stories .container-friends-stories img {
-    display: none;
-}
-
-main .main .container.stories .container-friends-stories .story.your-story .my-story {
-    display: block;
-    object-fit: cover;
-    /* position: absolute;
-    bottom: 0; */
-    width: 100%;
-    height: 100%;
-    background: green;
-    flex: 2;
-}
 
 main .main .container.stories .container-friends-stories .story .add-story {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    padding: 10px 10px 0 10px;
-    position: relative;
-    flex: 1;
+    padding: 10px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 main .main .container.stories .container-friends-stories .story .add-story i {
-    color: #1877f2;
+    color: white;
+    text-align: left;
     font-size: 2.3em;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 90%;
+    line-height: 1em;
 }
 
 main .main .container.stories .container-friends-stories .story .add-story p {
-    margin-top: 5px;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 0.9em;
+    color: white;
+    width: 60%;
+    text-align: left;
 }
 
 
 
+/** Story Content **/
+main .main .container.stories .container-friends-stories .story.friend-story .add-story i {
+    font-size: 1.5em;
+    border: 4px solid #1877f2;
+    border-radius: 50%;
+    width: fit-content;
+    overflow: hidden;
+    background: black;
+}
 
 
+main .main .container.stories .container-friends-stories .story.friend-story .add-story p {
+    font-weight: lighter;
+    width: 90%;
+    
+}
+
+
+/** News Feed **/
+main .main .content-container {
+    order: 1;
+    margin-top: 8px;
+}
+
+
+main .main .content-container .content {
+    padding: 10px 13px 10px 13px;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+
+    /** Main Font For The News Feed Content **/
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+main .main .content-container .content .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+main .main .content-container .content .header .left-section {
+    display: flex;
+    gap: 1px;
+}
+
+main .main .content-container .content .header .left-section .profile {
+    border: 2px solid #1877f2;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+main .main .content-container .content .header .left-section .profile .friend-profile {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+main .main .content-container .content .header .left-section .name {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    justify-content: center;
+}
+
+main .main .content-container .content .header .left-section .name .friend-name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+main .main .content-container .content .header .left-section .name .time-posted {
+    font-size: 0.7em;
+    color: #90949c;
+}
+
+main .main .content-container .content .header .fa-solid.fa-ellipsis {
+    font-size: 1.3em;
+}
+
+
+main .main .content-container .content .content-image {
+    padding: 10px 5px 10px 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main .main .content-container .content .content-image .friend-comment {
+    font-size: 0.9em;
+}
