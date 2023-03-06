@@ -35,12 +35,6 @@
     }
 
     /**Left Section **/
-    main .desktop.sidebar-left {
-        height: 100%;
-        background: #101010;
-        position: relative;
-        width: 50em;
-    }
 
     main .desktop.sidebar-left .scrollbar {
         overflow-y: scroll;
@@ -189,10 +183,6 @@
 
    
     /** Right Section **/
-    main .desktop.sidebar-right {
-        width: 50em;
-        height: 100%;
-    }
 
     
     main .desktop.sidebar-right .scrollbar {
@@ -428,26 +418,12 @@
     }
 
 
-    /** Main Section **/
-    main .main {
-        display: flex;
-        flex-direction: column;
-        /* padding: 20px 150px; */
-        width: 95em;
-    }
+  
 
     main .main .content-container {
         order: 2;
         display: none;
     }
-
-    /** Main First Section **/
-    main .main { 
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-    }
-
     /* main .main .desktop.container {
         background: #202020;
         border-radius: 20px;
@@ -576,13 +552,17 @@
     main .main .container.post-feed .desktop.post-feed-option {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     main .main .container.post-feed .desktop.post-feed-option li {
-        flex-grow: 1;
         height: 100%;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
     }
 
     main .main .container.post-feed .desktop.post-feed-option li:hover {
@@ -590,19 +570,22 @@
     }
     
     main .main .container.post-feed .desktop.post-feed-option li a {
+        width: 100%;
+        /* display: flex;
+        justify-content: center; */
         display: flex;
         justify-content: center;
-        flex-grow: 1;
         padding: 9px;
         gap: 5px;
         font-size: 1em;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: #B0B3B8;
         font-weight:500;
+        flex-wrap: wrap;
     }
 
     main .main .container.post-feed .desktop.post-feed-option li a i {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     main .main .container.post-feed .desktop.post-feed-option li a .fa-solid.fa-video {
@@ -616,6 +599,36 @@
     main .main .container.post-feed .desktop.post-feed-option li a .fa-regular.fa-face-laugh-beam {
         color: rgb(241, 241, 49);
     }
+
+
+    /** 3 container sectioning **/
+      /** Main Section **/
+      main .main {
+        display: flex;
+        flex-direction: column;
+        /* width: 130em; */
+        row-gap: 10px;
+        width: 70%;
+    }
+
+    /** Right Section **/
+    main .desktop.sidebar-right {
+        /* width: 50em; */
+        height: 100%;
+        width: 30%;
+    }
+
+    /** Left Section **/
+    main .desktop.sidebar-left {
+        height: 100%;
+        background: #101010;
+        position: relative;
+        /* width: 50em; */
+        width: 30%;
+    }
+
 }
+
+
 
 
