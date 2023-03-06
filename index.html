@@ -8,7 +8,7 @@
 
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/header.css">
     <title>Facebook Clone</title>
 </head>
@@ -25,11 +25,18 @@
 
             <ul class="desktop mobile list one">
 
-                <li class="desktop"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <!-- <li class="desktop"><a href=""><i class="fa-brands fa-facebook"></i></a></li> -->
+                
+
+                <section class="desktop left-section">
+                    <section class="desktop facebook-image">
+                        <img src="img/header-icon.png" alt="">
+                    </section>
+                    <p class="desktop search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search Facebook"></p>
+                </section>
                 
                 <h1 class="mobile">facebook</h2>
-                <!-- <li class="mobile menu"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li> -->
-                <p class="desktop"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search Facebook"></p>
+                
                  
                 <section class="mobile-container">
                     <li class="mobile menu"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
@@ -41,7 +48,7 @@
             </ul>
 
             <ul class="desktop mobile list two">
-                <li class="desktop"><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li class="desktop"><a href="#" id="selected"><i class="fa-solid fa-house"></i></a></li>
                 <li class="mobile"><a href="#" id="selected"><i class="fa-solid fa-house"></i></a></li>
                 <li class="mobile"><a href="#"><i class="fa-solid fa-user-group"></i></a></li>
                 <li class="mobile"><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
@@ -213,6 +220,10 @@
 
                 <li style="display : none;"><a href="#"><img src="img/profile.jpg" alt=""></a></li>
 
+                <button class="your-profile">
+                    <img src="img/profile.jpg" alt="">
+                </button>
+
             </ul>
 
         </nav>
@@ -222,41 +233,101 @@
 
     <main>
 
-        <!-- <section class="desktop sidebar-left scrollbar">
-            <ul class="categories">
-
-                <a href="#" style="display: none;">
-                    <img src="img/profile.jpg" alt="">
-                    <p>Hans Zin Sanchez</p>
-                </a>
-
-                <a href="#">
-                    <i class="fa-solid fa-user-group"></i>
-                    <p>Friends</p>
-                </a>
-
-                <a href="#">
-                    <i class="fa-solid fa-calendar-day"></i>
-                    <p>Most Recent</p>
-                </a>
-
-                <a href="#">
-                    <i class="fa-solid fa-people-group"></i>
-                    <p>Groups</p>
-                </a>
-                
-                <a href="#">
-                    <i class="fa-solid fa-shop"></i>
-                    <p>Marketplace</p>
-                </a>
-
-                <a href="#">
-                    <i class="fa-solid fa-tv"></i>
-                    <p>Watch</p>
-                </a>
-
-            </ul>
-        </section> -->
+        <section class="desktop sidebar-left">
+            <section class="scrollbar">
+                <section class="content">
+                    <button class="your-profile">
+                        <section class="profile">
+                            <img src="img/profile.jpg" alt="">
+                        </section>
+                        <p>Hans Zin Sanchez</p>
+                    </button>
+                    <ul class="section-categories">
+                        <a href="" class="option">
+                            <i class="fa-solid fa-user-group"></i>
+                            <p>Friends</p>
+                        </a>
+                        <a href="" class="option">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p>Most Recent</p>
+                        </a>
+                        <a href="" class="option">
+                            <i class="fa-solid fa-people-group"></i>
+                            <p>Groups</p>
+                        </a>
+                        <a href="" class="option">
+                            <i class="fa-solid fa-store"></i>
+                            <p>Marketplace</p>
+                        </a>
+                        <a href="" class="option">
+                            <i class="fa-solid fa-tv"></i>
+                            <p>Watch</p>
+                        </a>
+                        <!-- <button class="option see-more">
+                            <i class="fa-solid fa-circle-chevron-down"></i>
+                            <p>See more</p>
+                        </button> -->
+                    </ul>
+                    <hr>
+                    <section class="your-shortcuts">
+                        <h2>Your shortcuts</h2>
+                        <button>Edit</button>
+                    </section>
+                    <ul class="section-categories">
+                        <a href="" class="option">
+                            <section class="category-image">
+                                <img src="img/profile.jpg" alt="">
+                            </section>
+                            <p class="category-name">CHED Scholarship 2023</p>
+                        </a>
+                        <a href="" class="option">
+                            <section class="category-image">
+                                <img src="img/profile.jpg" alt="">
+                            </section>
+                            <p class="category-name">8 Ball Pool</p>
+                        </a>
+                        <a href="" class="option">
+                            <section class="category-image">
+                                <img src="img/profile.jpg" alt="">
+                            </section>
+                            <p class="category-name">Agar.io</p>
+                        </a>
+                        <a href="" class="option">
+                            <section class="category-image">
+                                <img src="img/profile.jpg" alt="">
+                            </section>
+                            <p class="category-name">Angry Birds Friends</p>
+                        </a>
+                        <a href="" class="option">
+                            <section class="category-image">
+                                <img src="img/profile.jpg" alt="">
+                            </section>
+                            <p class="category-name">Battle Pirates</p>
+                        </a>
+                        <!-- <button class="option">
+                            <i class="fa-solid fa-circle-chevron-down"></i>
+                            <p>See more</p>
+                        </button> -->
+                    </ul>
+                    <ul class="footer">
+                        <li class="without-bullet"><a href="">Privacy</a></li>
+                        <li class="with-bullet">∙</li>
+                        <li class="without-bullet"><a href="">Terms</a></li>
+                        <li class="with-bullet">∙</li>
+                        <li class="without-bullet"><a href="">Advertising</a></li>
+                        <li class="with-bullet">∙</li>
+                        <li class="without-bullet"><a href="">Ad Choices<i class="fa-solid fa-play"></i></a></li>
+                        <li class="with-bullet">∙</li>
+                        <li class="without-bullet"><a href="">Cookies</a></li>
+                        <li class="with-bullet">∙</li>
+                        <li class="without-bullet"><a href="">More</a></li>
+                        <li class="with-bullet">∙</li>
+                        <li class="without-bullet"><a href="">Meta &copy; 2023</a></li>
+                        <li class="with-bullet">∙</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
 
         <section class="main">
 
@@ -551,7 +622,91 @@
 
         </section>
 
-        <section class="desktop sidebar-right"></section>
+        <section class="desktop sidebar-right">
+            <section class="scrollbar">
+                <section class="content">
+                    <section class="manage-profile-section">
+                        <section class="manage-profile">
+                            <h2>Manage profile</h2>
+                            <button><i class="fa-solid fa-ellipsis"></i></button>
+                        </section>
+                        <button class="your-profile profile">
+                            <section class="image">
+                                <img src="img/profile.jpg" alt="">
+                            </section>
+                            <p>Hans Zin Sanchez</p>
+                        </button>
+                        <button class="your-profile create-promotion">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <p>Create promotion</p>
+                        </button>
+                    </section>
+                    <hr>
+                    <section class="birthday-section">
+                        <h2>Birthdays</h2>
+                        <a href="" class="birthdays">
+                            <i class="fa-solid fa-gift"></i>
+                            <p>Username's birthday is today.</p>
+                        </a>
+                    </section>
+                    <hr>
+                    <section class="contact-section">
+                        <section class="contact-header">
+                            <h2>Contacts</h2>
+                            <section class="contact-option">
+                                <button><i class="fa-solid fa-video"></i></button>
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-ellipsis"></i></button>
+                            </section>
+                        </section>
+                        <section class="contact contact-you-know">
+                            <button class="contact-friend">
+                                <section class="friend-profile">
+                                    <img src="img/profile.jpg" alt="">
+                                </section>
+                                <p>Username</p>
+                            </button>
+                            <button class="contact-friend">
+                                <section class="friend-profile">
+                                    <img src="img/profile.jpg" alt="">
+                                </section>
+                                <p>Username</p>
+                            </button>
+                        </section>
+                        <hr>
+                        <section class="contact group-contact-section">
+                            <h2>Group conversations</h2>
+                            <section class="contact-friend group">
+                                <section class="friend-profile group-profile">
+                                    <img src="img/profile.jpg" alt="">
+                                </section>
+                                <p>Group Name</p>
+                            </section>
+                            <section class="contact-friend group">
+                                <section class="friend-profile group-profile">
+                                    <img src="img/profile.jpg" alt="">
+                                </section>
+                                <p>Group Name</p>
+                            </section>
+                            <section class="contact-friend group">
+                                <section class="friend-profile group-profile">
+                                    <img src="img/profile.jpg" alt="">
+                                </section>
+                                <p>Group Name</p>
+                            </section>
+    
+                            <section class="contact-friend group">
+                                <section class="friend-profile group-profile">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </section>
+                                <p>Create new group</p>
+                            </section>
+                            
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
 
     </main>
 

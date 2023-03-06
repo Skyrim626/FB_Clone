@@ -1,0 +1,436 @@
+
+
+@media only screen and (min-width: 768px) {
+    
+    /**Main **/
+
+    body {
+        background: #101010;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* main .main {
+        display: none;
+    } */
+
+    main * {
+        display: block;
+        overflow: hidden;
+    }
+
+    main .desktop {
+        display: block;
+        flex-grow: 1;
+        /* padding: 10px 0 10px 10px; */
+    }
+
+    main .main {
+        flex-grow: 1;
+        padding: 25px 95px;
+    }
+
+    /**Left Section **/
+    main .desktop.sidebar-left {
+        height: 100%;
+        background: #101010;
+        position: relative;
+        width: 50em;
+    }
+
+    main .desktop.sidebar-left .scrollbar {
+        overflow-y: scroll;
+        height: 100%;
+
+    }
+    
+    main .desktop.sidebar-left .scrollbar .content {
+        overflow: hidden;
+        padding: 15px 0 0 10px;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .your-profile {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        border: none;
+        align-items: center;
+        gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .your-profile:hover {
+        background: #3A3B3C;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .your-profile .profile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .your-profile .profile img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    main .desktop.sidebar-left .scrollbar .content .your-profile p {
+        font-size: 1em;
+        font-family: sans-serif;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: whitesmoke;
+        text-align: left;
+    }
+
+    /** Categories **/
+    main .desktop.sidebar-left .scrollbar .content .section-categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .section-categories .option {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 8px;
+        border-radius: 15px;
+        color: #E4E6EB;;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .section-categories .option:hover {
+        background: #3A3B3C;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .section-categories .option i {
+        font-size: 1.3em;
+        color: rgb(56, 248, 248);
+        min-width: 30px;
+        text-align: center;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .section-categories .option p {
+        justify-content: flex-end;
+        font-family: Arial, Helvetica, sans-serif;
+        /* color: #E4E6EB; */
+        font-weight: bold;
+    }
+
+   
+
+    main .desktop.sidebar-left .scrollbar .content hr {
+        margin: 15px 0;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .your-shortcuts {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        color: #E4E6EB;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .your-shortcuts h2 {
+        font-size: 1.2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .your-shortcuts button {
+        padding: 8px;
+        color: #1877f2;
+        background: none;
+        border: none;
+        text-decoration: underline;
+    }
+
+
+    /** Image Icon **/
+
+    main .desktop.sidebar-left .scrollbar .content .section-categories .option .category-image {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .section-categories .option .category-image img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /** Footer **/
+    main .desktop.sidebar-left .scrollbar .content .footer {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px 10px 10px;
+        align-items: center;
+        column-gap: 5px;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .footer .with-bullet {
+        color: gray;
+    }
+    main .desktop.sidebar-left .scrollbar .content .footer li a {
+        color: #E4E6EB;
+        font-size: 0.9em;
+    }
+
+    main .desktop.sidebar-left .scrollbar .content .footer li a:hover {
+        text-decoration: underline;
+    }
+
+   
+    /** Right Section **/
+    main .desktop.sidebar-right {
+        width: 50em;
+        height: 100%;
+    }
+
+    
+    main .desktop.sidebar-right .scrollbar {
+        overflow-y: scroll;
+        height: 100%;
+    }
+    
+    main .desktop.sidebar-right .scrollbar .content {
+        overflow: hidden;
+        padding: 20px 10px 0 15px;
+    }
+
+    /** Layouting **/
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .manage-profile {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: #B0B3B8;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .manage-profile h2 {
+        font-size: 1.2em;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .manage-profile button {
+        font-size: 1.1em;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        padding: 4px;
+        background: none;
+        border: none;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile.profile {
+        margin-top: 10px;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        background: none;
+        border: none;
+
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile:hover {
+        background: #3A3B3C;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile.profile .image {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile.profile .image img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile.profile p {
+        color: #E4E6EB;
+        font-family: inherit;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile.create-promotion   {
+        padding: 10px;
+        color: #B0B3B8;
+        font-size: 0.9em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile.create-promotion i {
+        margin-left: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content hr {
+        margin: 15px 0 15px 0;
+        border: 1px solid rgb(82, 82, 82);
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .birthday-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .birthday-section h2 {
+        color: #B0B3B8;
+        font-size: 1.2em;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .birthday-section .birthdays {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0 10px 5px;
+        border-radius: 10px;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .birthday-section .birthdays i {
+        color: rgb(255, 43, 43);
+        font-size: 1.4em;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .birthday-section .birthdays p {
+        color: #E4E6EB;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .birthday-section .birthdays:hover {
+        background: #3A3B3C;
+    }
+
+
+    /** Contact Section **/
+    main .desktop.sidebar-right .scrollbar .content .contact-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        color: #B0B3B8;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-header h2 {
+        font-size: 1.3em;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-header .contact-option {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 15px;
+        color: inherit;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-header .contact-option button {
+        color: inherit;
+        display: flex;
+        padding: 8px;
+        border-radius: 50%;
+        background: none;
+        border: none;
+        font-size: 1em;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-header .contact-option button:hover {
+        background: #3A3B3C;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-section {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-section .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-section .contact .contact-friend {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 0 8px 5px;
+        column-gap: 5px;
+        border-radius: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        background: none;
+        border: none;
+
+        color: #B0B3B8;
+        font-weight: bold;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-section .contact .contact-friend .friend-profile {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-section .contact .contact-friend .friend-profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-section .contact .contact-friend p {
+        font-size: 1.1em;
+    }
+
+    /** Hover Effect **/
+    main .desktop.sidebar-right .scrollbar .content .contact-section .contact .contact-friend:hover {
+        background: #3A3B3C;
+    }
+    
+    main .desktop.sidebar-right .scrollbar .content .contact-section .contact.group-contact-section h2 {
+        color: #B0B3B8;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    main .desktop.sidebar-right .scrollbar .content .contact-section .contact.group-contact-section .contact-friend.group .friend-profile.group-profile {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /** Main Section **/
+    
+
+}
+
+

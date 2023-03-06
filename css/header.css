@@ -116,3 +116,165 @@ header nav .desktop.mobile.list.two .mobile a .fa-solid.fa-house {
 
 
 
+@media only screen and (min-width: 768px) {
+
+    header {
+        background: #101010;
+        height: 68px;
+        border-bottom: 1px solid #3A3B3C;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    
+    header nav .desktop.list {
+        flex-grow: 1;
+    }
+
+    /**Hides all Mobile Icons **/
+    header nav .desktop.mobile.list.one .mobile {
+        display: none;
+    }
+
+    /**Show all Desktop icons **/
+    header nav .desktop.mobile.list.one .desktop {
+        display: block;    
+    }
+
+    header nav .desktop.mobile.list.one .desktop.left-section {
+        display: flex;
+        gap: 10px;
+        margin-left: 5px;
+    }
+
+    header nav .desktop.mobile.list.one .desktop.left-section .desktop.facebook-image {
+        max-width: 50px;
+        max-height: 45px;
+    }
+
+    header nav .desktop.mobile.list.one .desktop.facebook-image img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    header nav .desktop.mobile.list.one .desktop.search-box {
+        padding: 15px 60px 15px 15px;
+        border-radius: 20px;
+        display: flex;
+        gap: 8px;
+        background: #3A3B3C;
+        color: whitesmoke;
+        color: rgb(173, 173, 173);
+    }
+
+    header nav .desktop.mobile.list.one .desktop.search-box input {
+        background: none;
+        border: none;
+        color: rgb(173, 173, 173);
+    }
+    header nav .desktop.mobile.list.one .desktop.search-box input::placeholder {
+        font-size: 1.1em;
+        color: rgb(173, 173, 173);
+    }
+
+
+    /** Unordered List Two **/
+
+    /** Show Desktop Buttons **/
+    header nav .desktop.mobile.list.two .desktop {
+        display: block;
+    }
+
+    /** Hide Mobile Button **/
+    header nav .desktop.mobile.list.two .mobile {
+        display: none;
+    }
+
+
+    header nav .desktop.mobile.list.two {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }  
+
+    header nav .desktop.mobile.list.two .desktop  {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    header nav .desktop.mobile.list.two .desktop a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    header nav .desktop.mobile.list.two .desktop a i {
+        font-size: 1.4em;
+        color: whitesmoke;
+    }
+
+    header nav .desktop.mobile.list.two .desktop a .fa-solid.fa-house {
+        color: #1877f2;
+    }
+
+    header nav .desktop.mobile.list.two .desktop #selected {
+        border-bottom: 4px solid #1877f2;
+    }
+
+
+
+     /** Display Desktop Icons**/
+     header nav .desktop.list.three {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    header nav .desktop.list.three li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+        justify-content: center;
+    }
+
+    header nav .desktop.list.three li a {
+        padding: 11px 12px;
+        background: #3A3B3C;
+        border-radius: 50%;
+    }
+
+    header nav .desktop.list.three li a i {
+        font-size: 1.4em;
+        color: whitesmoke;
+    }
+
+    header nav .desktop.list.three .your-profile {
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+        background-color: gray;
+        overflow: hidden;
+        border: none;
+    }
+
+    header nav .desktop.list.three .your-profile img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    
+
+}   
