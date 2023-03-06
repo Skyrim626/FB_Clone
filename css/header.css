@@ -116,7 +116,7 @@ header nav .desktop.mobile.list.two .mobile a .fa-solid.fa-house {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
     header {
         background: #101010;

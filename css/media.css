@@ -1,6 +1,6 @@
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     
     /**Main **/
 
@@ -432,15 +432,8 @@
     main .main {
         display: flex;
         flex-direction: column;
-    }
-
-    main .main .container.stories {
-        order: 0;
-    }
-
-    main .main .container.post-feed {
-        order: 1;
-        background: red;
+        /* padding: 20px 150px; */
+        width: 95em;
     }
 
     main .main .content-container {
@@ -449,21 +442,13 @@
     }
 
     /** Main First Section **/
-    main .main {
-        width: 100em;
-        height: 25em;
-        
+    main .main { 
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
     }
 
-    main .main .container.stories {
-       display: none;
-    }
-
-    main .main .container.post-feed {
-        display: none;
-    }
-
-    main .main .desktop.container {
+    /* main .main .desktop.container {
         background: #202020;
         border-radius: 20px;
         display: flex;
@@ -477,6 +462,159 @@
         font-size: 2em;
         padding: 100px;
         text-align: center;
+    } */
+    /** My Day **/
+
+    main .main .container {
+        background: #202020;
+        border-radius: 20px;
+        color: white;
+    }
+
+    main .main .container.stories {
+        order: 0;
+        padding: 0 20px 0 20px;
+    }
+
+    main .main .container.stories h4 {
+        display: none;
+    }
+
+    main .main .container.stories .desktop.selection {
+        display: flex;
+        
+    }
+
+    main .main .container.stories .desktop.selection li {
+        display: flex;
+        width: 100%;
+    }
+
+    main .main .container.stories .desktop.selection li a {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    main .main .container.stories .desktop.selection li a:hover {
+        background: #3A3B3C;
+        
+    }
+
+    main .main .container.stories .desktop.selection #selected {
+        border-bottom: 4px solid #1877f2;
+    }
+
+    main .main .container.stories .desktop.selection #selected a {
+        color: #1877f2;
+    }
+
+    main .main .container.stories .desktop.selection li a {
+        color: #B0B3B8;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    
+    main .main .container.stories hr {
+        border: 1px solid #3A3B3C;
+        padding: 0;
+        
+    }
+    main .main .container.stories .container-friends-stories {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        padding: 0 0 15px 0;
+    }
+
+    main .main .container.stories .container-friends-stories .story {
+        min-width: 130px;
+        min-height: 230px;
+        
+    } 
+
+    main .main .container.post-feed {
+       order: 1;
+       padding: 15px 20px 15px 20px;
+       gap: 15px;
+       display: flex;
+       flex-direction: column;
+    }
+
+    main .main .container.post-feed .post-feed-main .photo-option {
+        display: none;
+    }
+
+    main .main .container.post-feed .post-feed-main img {
+        width: 2.9em;
+        height: 2.7em;
+        border-radius: 50%;
+    }
+
+    main .main .container.post-feed .post-feed-main input {
+        background: #3A3B3C;
+        display: flex;
+        font-size: 1em;
+    }
+
+    main .main .container.post-feed .post-feed-main input::placeholder {
+        color: #B0B3B8;
+
+    }
+
+    main .main .container.post-feed hr {
+        display: block;
+    }
+
+    main .main .container.post-feed .desktop.post-feed-option {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main .main .container.post-feed .desktop.post-feed-option li {
+        flex-grow: 1;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    main .main .container.post-feed .desktop.post-feed-option li:hover {
+        background: #3A3B3C;
+    }
+    
+    main .main .container.post-feed .desktop.post-feed-option li a {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 9px;
+        gap: 5px;
+        font-size: 1em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #B0B3B8;
+        font-weight:500;
+    }
+
+    main .main .container.post-feed .desktop.post-feed-option li a i {
+        font-size: 1.5em;
+    }
+
+    main .main .container.post-feed .desktop.post-feed-option li a .fa-solid.fa-video {
+        color:rgb(233, 44, 44);
+    }
+
+    main .main .container.post-feed .desktop.post-feed-option li a .fa-solid.fa-images {
+        color: rgb(68, 189, 68);
+    }
+
+    main .main .container.post-feed .desktop.post-feed-option li a .fa-regular.fa-face-laugh-beam {
+        color: rgb(241, 241, 49);
     }
 }
 
