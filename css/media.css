@@ -429,8 +429,55 @@
 
 
     /** Main Section **/
-    
+    main .main {
+        display: flex;
+        flex-direction: column;
+    }
 
+    main .main .container.stories {
+        order: 0;
+    }
+
+    main .main .container.post-feed {
+        order: 1;
+        background: red;
+    }
+
+    main .main .content-container {
+        order: 2;
+        display: none;
+    }
+
+    /** Main First Section **/
+    main .main {
+        width: 100em;
+        height: 25em;
+        
+    }
+
+    main .main .container.stories {
+       display: none;
+    }
+
+    main .main .container.post-feed {
+        display: none;
+    }
+
+    main .main .desktop.container {
+        background: #202020;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main .main .desktop.container p {
+        color: #B0B3B8;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2em;
+        padding: 100px;
+        text-align: center;
+    }
 }
 
 
