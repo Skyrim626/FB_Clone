@@ -37,7 +37,7 @@
     /**Left Section **/
 
     main .desktop.sidebar-left .scrollbar {
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         height: 100%;
 
     }
@@ -190,7 +190,7 @@
 
     
     main .desktop.sidebar-right .scrollbar {
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         height: 100%;
     }
 
