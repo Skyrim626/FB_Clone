@@ -41,6 +41,10 @@
         height: 100%;
 
     }
+
+    main .desktop.sidebar-left .scrollbar::-webkit-scrollbar {
+        display: none;
+    }
     
     main .desktop.sidebar-left .scrollbar .content {
         overflow: hidden;
@@ -188,6 +192,10 @@
     main .desktop.sidebar-right .scrollbar {
         overflow-y: scroll;
         height: 100%;
+    }
+
+    main .desktop.sidebar-right .scrollbar::-webkit-scrollbar {
+        display: none;
     }
     
     main .desktop.sidebar-right .scrollbar .content {
