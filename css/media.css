@@ -108,7 +108,7 @@
     }
 
     main .desktop.sidebar-left .scrollbar .content .section-categories .option i {
-        font-size: 1.3em;
+        font-size: 1.1em;
         color: rgb(56, 248, 248);
         min-width: 30px;
         text-align: center;
@@ -119,6 +119,7 @@
         font-family: Arial, Helvetica, sans-serif;
         /* color: #E4E6EB; */
         font-weight: bold;
+        font-size: 0.9em;
     }
 
    
@@ -136,8 +137,9 @@
     }
 
     main .desktop.sidebar-left .scrollbar .content .your-shortcuts h2 {
-        font-size: 1.2em;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.1em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #B0B3B8;
     }
 
     main .desktop.sidebar-left .scrollbar .content .your-shortcuts button {
@@ -178,7 +180,7 @@
     }
     main .desktop.sidebar-left .scrollbar .content .footer li a {
         color: #E4E6EB;
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 
     main .desktop.sidebar-left .scrollbar .content .footer li a:hover {
@@ -220,7 +222,7 @@
     }
 
     main .desktop.sidebar-right .scrollbar .content .manage-profile-section .manage-profile h2 {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     main .desktop.sidebar-right .scrollbar .content .manage-profile-section .manage-profile button {
@@ -270,14 +272,14 @@
     main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile.profile p {
         color: #E4E6EB;
         font-family: inherit;
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: bold;
     }
 
     main .desktop.sidebar-right .scrollbar .content .manage-profile-section .your-profile.create-promotion   {
         padding: 10px;
         color: #B0B3B8;
-        font-size: 0.9em;
+        font-size: 0.8em;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
@@ -301,7 +303,7 @@
 
     main .desktop.sidebar-right .scrollbar .content .birthday-section h2 {
         color: #B0B3B8;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     main .desktop.sidebar-right .scrollbar .content .birthday-section .birthdays {
@@ -315,11 +317,12 @@
 
     main .desktop.sidebar-right .scrollbar .content .birthday-section .birthdays i {
         color: rgb(255, 43, 43);
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     main .desktop.sidebar-right .scrollbar .content .birthday-section .birthdays p {
         color: #E4E6EB;
+        font-size: 0.9em;
     }
 
     main .desktop.sidebar-right .scrollbar .content .birthday-section .birthdays:hover {
@@ -339,7 +342,7 @@
     }
 
     main .desktop.sidebar-right .scrollbar .content .contact-header h2 {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     main .desktop.sidebar-right .scrollbar .content .contact-header .contact-option {
@@ -404,7 +407,7 @@
     }
 
     main .desktop.sidebar-right .scrollbar .content .contact-section .contact .contact-friend p {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     /** Hover Effect **/
@@ -415,7 +418,7 @@
     main .desktop.sidebar-right .scrollbar .content .contact-section .contact.group-contact-section h2 {
         color: #B0B3B8;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 1.3em;
+        font-size: 1.1em;
         margin-bottom: 10px;
     }
 
@@ -423,8 +426,14 @@
         align-items: center;
         display: flex;
         justify-content: center;
+        
     }
 
+
+     main .desktop.sidebar-right .scrollbar .content .contact-section .contact.group-contact-section .contact-friend {
+        font-size: 1em;
+        font-weight: lighter;
+     }
 
   
 
@@ -545,7 +554,7 @@
     main .main .container.post-feed .post-feed-main input {
         background: #3A3B3C;
         display: flex;
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     main .main .container.post-feed .post-feed-main input::placeholder {
@@ -585,7 +594,7 @@
         justify-content: center;
         padding: 9px;
         gap: 5px;
-        font-size: 1em;
+        font-size: 0.9em;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: #B0B3B8;
         font-weight:500;

@@ -1,4 +1,6 @@
-
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .drop-down-menu {
     display: none;
@@ -144,6 +146,17 @@ main .main .container.stories .container-friends-stories .story {
     background-position: center;
 }
 
+main .main .container.stories .container-friends-stories .story .story-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 
 main .main .container.stories .container-friends-stories .story .add-story {
     display: flex;
@@ -176,18 +189,32 @@ main .main .container.stories .container-friends-stories .story .add-story p {
 
 
 /** Story Content **/
-main .main .container.stories .container-friends-stories .story.friend-story .add-story i {
+/* main .main .container.stories .container-friends-stories .story.friend-story .add-story i {
     font-size: 1.5em;
     border: 4px solid #1877f2;
     border-radius: 50%;
     width: fit-content;
     overflow: hidden;
     background: black;
+} */
+
+main .main .container.stories .container-friends-stories .story.friend-story .add-story .profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #1877f2;
+    overflow: hidden;
+}
+
+main .main .container.stories .container-friends-stories .story.friend-story .add-story .profile img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 
 main .main .container.stories .container-friends-stories .story.friend-story .add-story p {
-    font-weight: lighter;
+    font-weight: bold;
     width: 90%;
     
 }
@@ -207,7 +234,7 @@ main .main .content-container .content {
     flex-direction: column;
     margin-top: 5px;
     /** Main Font For The News Feed Content **/
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
